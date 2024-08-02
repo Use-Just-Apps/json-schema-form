@@ -17,6 +17,12 @@ The goal of this is to create a copy-able file that can be used in any JS Framew
 
 ## Running Locally:
 
+### Prerequisites
+
+- [bun](https://bun.sh/)
+
+### Instructions
+
 - Clone the [repo](https://github.com/Use-Just-Apps/json-schema-form).
 - Run `bun install` in the local repo folder.
 - Run `bun run dev` to launch the Vite app and render the JSON Schema in `App.tsx`.
