@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# JSON-Schema-Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Typesafe, validated JSON Schema Form built with shad/cn ui, Zod and react-hook-form.
 
-Currently, two official plugins are available:
+## Goal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this is to create a copy-able file that can be used in any JS Framework to render a form from a user-defined JSON Schema with any validation library (Zod, Yup, etc.), any form validator (react-hook-form, Formik, etc. ) and any components (Plain HTML, shadcn/ui, Chakra UI, MUI, etc.).
 
-## Expanding the ESLint configuration
+## What works:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Parsing a JSON Object and getting the form to render for type String and Integer.
 
-- Configure the top-level `parserOptions` property like this:
+## Roadmap:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Parse and validate the JSON Schema input.
+- Make the logic work for Object type in JSON Schema.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Running Locally:
+
+- Clone the [repo](https://github.com/Use-Just-Apps/json-schema-form).
+- Run `bun install` in the local repo folder.
+- Run `bun run dev` to launch the Vite app and render the JSON Schema in `App.tsx`.
+
+Contributions are welcome! Please fork the repo and raise a PR.
