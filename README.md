@@ -13,6 +13,7 @@ The goal of this is to create a copy-able file that can be used in any JS Framew
 ## Roadmap:
 
 - Parse and validate the JSON Schema input.
+- Ordering functionality for objects - they should render in user-defined 
 - Make the logic work for Object type in JSON Schema.
 
 ## Running Locally:
